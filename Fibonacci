@@ -1,0 +1,39 @@
+n = int(input("Enter how many terms: "))
+#n=5
+a = 0 # 0,1,1,2,3
+b = 1 # 1,1,2,3,5
+
+for i in range(n):
+    print(a) # 0,1,1,2,3
+    c = a + b # 1,2,3,5,8
+    a = b # 1,1,2,3,5
+    b = c #1,2,3,5,8
+# n = 5
+# a = 0, b = 1
+
+# Loop 1 (i=0):
+# print(a) → 0
+# c = a + b = 0 + 1 = 1
+# a = b = 1, b = c = 1
+
+# Loop 2 (i=1):
+# print(a) → 1
+# c = 1 + 1 = 2
+# a = 1, b = 2
+
+# Loop 3 (i=2):
+# print(a) → 1
+# c = 1 + 2 = 3
+# a = 2, b = 3
+
+# Loop 4 (i=3):
+# print(a) → 2
+# c = 2 + 3 = 5
+# a = 3, b = 5
+
+# Loop 5 (i=4):
+# print(a) → 3
+# c = 3 + 5 = 8
+# a = 5, b = 8
+
+# Output → 0, 1, 1, 2, 3
