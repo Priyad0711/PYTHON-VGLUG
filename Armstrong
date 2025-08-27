@@ -1,0 +1,31 @@
+num = int(input("Enter a number: "))
+temp = num #153
+sum= 0 
+
+while temp > 0:
+    digit = temp % 10 #3 ,5 ,1
+    sum = sum + digit*digit*digit   #27 ,125 ,1
+    temp = temp // 10 #15,1 
+# num = 153
+# temp = 153, sum= 0
+
+# First loop:
+# digit = 153 % 10 = 3
+# sum = 0 + 3*3*3 = 27
+# temp = 153 // 10 = 15
+
+# Second loop:
+# digit = 15 % 10 = 5
+# sum= 27 + 5*5*5 = 152
+# temp = 15 // 10 = 1
+
+# Third loop:
+# digit = 1 % 10 = 1
+# sum= 152 + 1*1*1 = 153
+# temp = 1 // 10 = 0 → loop ends
+# num (153) == sum(153) → Armstrong 
+
+if num == sum: #153
+    print("Armstrong number")
+else:
+    print("Not Armstrong number")
